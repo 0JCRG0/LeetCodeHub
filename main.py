@@ -1,6 +1,8 @@
-from patterns.SlidingWindow.Maximum_Average_Subarray_643 import Solution
+from patterns.SlidingWindow import SlidingWindowSolutions
 
 
 
 if __name__ == "__main__":
-    Solution.findMaxAverage()
+    instance = SlidingWindowSolutions()
+    ans = instance.findMaxAverage()
+    print(ans)
