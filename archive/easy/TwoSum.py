@@ -1,24 +1,22 @@
 import pretty_errors
 
 class Solution:
-    def two_sum(self, nums, target):
-        num_dict = {}
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in num_dict:
-                return [num_dict[complement], i]
-            num_dict[num] = i
+    def TwoSum(self, target, arr):
+        nums = {}
+        for i, x in enumerate(arr):
+            residual = target - x
+            if residual in nums:
+                return [nums[residual], i]
+            nums[x] = i
         return None
 
 
-# Create an instance of the Solution class
+target = 16
+
+arr = [2, 5, 7, 9, 11]
+
 solution = Solution()
 
-# Call the isPalindrome method with an integer argument
-nums=[2, 7, 11, 15]
-target= 9
+ans = solution.TwoSum(target, arr)
 
-result = solution.two_sum(nums, target)
-
-# Print the result
-print(result)
+print(ans)
