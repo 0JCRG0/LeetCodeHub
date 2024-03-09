@@ -4,8 +4,8 @@ from data_structures.HashTables import HashTableSolutions
 
 
 if __name__ == "__main__":
-    sliding_window = SlidingWindowSolutions()
-    hash_table = HashTableSolutions()
+    sliding_window_instance = SlidingWindowSolutions()
+    hash_table_instance = HashTableSolutions()
 
     """
     Sliding Window
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     """
     Hash Table
     """
-    ans = HashTableSolutions.TwoSum()
-    
+    ans = hash_table_instance.TwoSum()
+
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
     print(ans)
