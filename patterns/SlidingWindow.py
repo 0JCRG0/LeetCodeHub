@@ -78,7 +78,7 @@ class SlidingWindowSolutions:
                 start += 1
 
         # Check if a valid subarray was found
-        return min_len if min_len != float('inf') else 0
+        return int(min_len) if min_len != float('inf') else 0
 
 
 
