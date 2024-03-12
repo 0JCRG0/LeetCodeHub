@@ -27,14 +27,14 @@ class HashTableSolutions():
             
         Only one valid answer exists.
         """
-        nums = {}
+        HashTable = {}
         for i, num in enumerate(arr):
             complement = target - num
-            if complement in nums:
-                return [nums[complement], i]
-            nums[num] = i
+            if complement in HashTable:
+                return [HashTable[complement], i]
+            HashTable[num] = i
         return None
-
+    
 
 if __name__ == "__main__":
     hash_table = HashTableSolutions()

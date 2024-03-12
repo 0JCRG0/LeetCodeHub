@@ -1,11 +1,12 @@
-from patterns.SlidingWindow import SlidingWindowSolutions
-from data_structures.HashTables import HashTableSolutions
+from patterns import SlidingWindow, TwoPointers
+from data_structures import HashTables
 
 
 
 if __name__ == "__main__":
-    sliding_window_instance = SlidingWindowSolutions()
-    hash_table_instance = HashTableSolutions()
+    sliding_window_instance = SlidingWindow.SlidingWindowSolutions()
+    hash_table_instance = HashTables.HashTableSolutions()
+    two_pointers_instance = TwoPointers.TwoPointersSolutions()
 
     """
     Sliding Window
@@ -15,7 +16,11 @@ if __name__ == "__main__":
     """
     Hash Table
     """
-    ans = hash_table_instance.TwoSum()
+    #ans = hash_table_instance.TwoSum()
+    """
+    Two Pointers
+    """
+    ans = two_pointers_instance.backspaceCompare()
 
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
     print(ans)
