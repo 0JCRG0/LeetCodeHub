@@ -23,10 +23,11 @@ if __name__ == "__main__":
     Two Pointers
     """
     #ans = two_pointers_instance.backspaceCompare()
+    ans = two_pointers_instance.IsSubsequence_392()
     """
     Merge Intervals
     """
-    ans = merge_intervals_instance.MergeInterval_56()
+    #ans = merge_intervals_instance.MergeInterval_56()
 
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
     print(ans)
