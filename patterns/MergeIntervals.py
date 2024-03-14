@@ -29,6 +29,7 @@ class MergeIntervalSolutions:
 
         intervals.sort(key=lambda x:x[0])
 
+
         merged = [intervals[0]]
 
         for current in intervals[1:]:
