@@ -23,7 +23,8 @@ if __name__ == "__main__":
     Two Pointers
     """
     #ans = two_pointers_instance.backspaceCompare()
-    ans = two_pointers_instance.IsSubsequence_392()
+    #ans = two_pointers_instance.IsSubsequence_392()
+    ans = two_pointers_instance.MoveZeroes_283()
     """
     Merge Intervals
     """

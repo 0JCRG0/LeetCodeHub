@@ -80,9 +80,38 @@ class TwoPointersSolutions():
 
         # If we've gone through the entire s, then it's a subsequence
         return s_index == len(s)
+    def MoveZeroes_283(self, nums: List[int]=[0,1,0,3,12]):
+        """
+        Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+        Note that you must do this in-place without making a copy of the array.
+
+        Example 1:
+
+        Input: nums = [0,1,0,3,12]
+        Output: [1,3,12,0,0]
+
+        Example 2:
+        Input: nums = [0]
+        Output: [0]
+
+        Constraints:
+
+        1 <= nums.length <= 104
+        -231 <= nums[i] <= 231 - 1
+        """
+        non_zero_position = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                print(f"BEFORE SWAPPING:\nnums[i]: {nums[i]}, nums[non_zero_position]: {nums[non_zero_position]}, nums: {nums}, non_zero_position: {non_zero_position}\n")
+                nums[i], nums[non_zero_position] = nums[non_zero_position], nums[i]
+                print(f"AFTER SWAPPING:\nnums[i]: {nums[i]}, nums[non_zero_position]: {nums[non_zero_position]}, nums: {nums}, non_zero_position: {non_zero_position}\n")
+                non_zero_position += 1
+        print(nums)
+
 
 if __name__ == "__main__":
     instance = TwoPointersSolutions()
-    ans = instance.IsSubsequence_392()
+    ans = instance.MoveZeroes_283()
     print(ans)
 
