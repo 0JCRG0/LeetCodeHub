@@ -1,9 +1,11 @@
+def twoSum(nums: list[int], target: int) -> list[int]:
+    hashmap = {}
+    for i, num in enumerate(nums):
+        temp = target - num
+        if temp in hashmap:
+            return [hashmap[temp], i]
+        hashmap[num] = i
 
-def two_sum(arr: list[int]=[2, 5, 7, 11], target: int=16) -> list[int]:
-    hash_table = {}
-    for i, num in enumerate(arr):
-        complement = target - num
-        if complement in hash_table:
-            return [hash_table[complement], i]
-        hash_table[num] = i
-    return None
+print(twoSum([2,7,11,15], 9))
+
+
